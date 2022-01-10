@@ -10,7 +10,7 @@ def google
 #exit
 
 session = GoogleDrive::Session.from_config("client_secret.json")
-ws = session.spreadsheet_by_key("1PVkIjpP62BgDNXBh5SYIjiDxdvvNo5r8fFSLgdN4zSo").worksheets[1]
+ws = session.spreadsheet_by_key("sheet ID here").worksheets[1]
 
 $ul = 0
 File.open("URL_Link.txt", "r") do |f|
